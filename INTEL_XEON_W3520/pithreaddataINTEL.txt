@@ -1,4 +1,0 @@
-1Thread 7.977324
-2Thread 4.891143
-3Thread 3.496548
-4Thread 3.419309
