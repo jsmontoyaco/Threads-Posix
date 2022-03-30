@@ -5,7 +5,7 @@
 #include <pthread.h>
 
 #define iterations 1e09
-#define threads 2
+#define threads 4
 double pithval[threads];
 int pith[threads];
 double pi = 0.0;
@@ -58,8 +58,8 @@ void main(){
 
     //gettimeofday(&tval_after, NULL); //time execution calc command for linux
     //timersub(&tval_after, &tval_before, &tval_result); //time execution calc command for linux
-    //seconds = (long int)tval_result.tv_sec; //time execution calc command for linux
-    //useconds = (long int)tval_result.tv_usec; //time execution calc command for linux
+    //long int seconds = (long int)tval_result.tv_sec; //time execution calc command for linux
+    //long int useconds = (long int)tval_result.tv_usec; //time execution calc command for linux
 
     fprintf(fo, "%i %f\n", threads,exec_time);  //time execution calc command for windows
     //fprintf(fo, "%i %ld.%06ld", threads,seconds, useconds); //time execution calc command for linux
